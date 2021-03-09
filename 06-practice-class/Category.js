@@ -7,7 +7,7 @@ class Category extends React.Component {
     // ... code goes here
     render() {
         const navibar = this.props.icons.map((result, index) => (
-            <li className="cat-link left valign-wrapper" >
+            <li className="cat-link left valign-wrapper" key={index}>
                 <i className="material-icons">{result.icon}</i>
                 {result.title}
             </li>
@@ -20,6 +20,16 @@ class Category extends React.Component {
                     {navibar}
                 </ul>   
             </div>
+            // <div className="row">
+            //     <ul>
+            //     {this.props.toys.map((toy, i) => (
+            //         <li key={i}>
+            //             {toy}
+            //         </li>
+            //     ))}
+            //     </ul>
+            // </div>
+            // </React.Fragment>    
         )
     }
 }
