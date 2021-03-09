@@ -6,8 +6,8 @@ class Category extends React.Component {
     // get data from props and use map to build an array of <li>
     // ... code goes here
     render() {
-        const navibar = data.map((result, index) => (
-            <li className="cat-link left valign-wrapper" key={index.toString()}>
+        const navibar = this.props.icons.map((result, index) => (
+            <li className="cat-link left valign-wrapper" >
                 <i className="material-icons">{result.icon}</i>
                 {result.title}
             </li>

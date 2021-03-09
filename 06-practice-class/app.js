@@ -37,6 +37,6 @@ const data = [
 ]
 
 ReactDOM.render(
-    <Category data={data} />,
+    <Category icons={data} />,
     document.getElementById('root')
 );
